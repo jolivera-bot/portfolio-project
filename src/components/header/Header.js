@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 
-import "./header.css"
+import "./header.css";
 
 const navlinks = [
   {
@@ -27,10 +27,12 @@ const navlinks = [
 ];
 
 const Header = () => {
-  return (<header className="header">
+  return <header className="header">
     <Container>
       <div className="navigation d-flex justify-content-between align-items-center">
-        <div className="logo"></div>
+        <div className="logo">
+          <img src='./images/jjco-logo.png' alt='logo' height={100}/>
+        </div>
         
         <div className="nav__menu">
           <ul className='nav__list'>
@@ -45,7 +47,7 @@ const Header = () => {
             
             <div className='nav__right d-flex align-items-center gap-4'>
                 <button className='btn'>Let's Talk</button>
-                <span className="mobile__menu">
+                <span className='mobile__menu'>
                   <i class="ri-menu-5-line"></i>
                 </span>
             </div>
@@ -54,7 +56,6 @@ const Header = () => {
       
     </Container>
   </header>
-  )
 }
 
 export default Header
