@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   z-index: 1;
-  padding-top: 1rem;
+  padding-top: 2rem;
   
 }
 
@@ -32,11 +32,11 @@
 }
 
 .nav__item a:hover{
-  color: #7865ff;
+  color: #005A8D;
 }
 
 .btn{
-  background: #7865ff;
+  background: #005A8D;
   color: #fff;
   border: none;
   outline: none;

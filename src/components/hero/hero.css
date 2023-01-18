@@ -15,9 +15,26 @@ color: #0e1b31;
 }
 
 .hero__title span {
-  color: #7865ff;
+  color: #1C82AD;
 }
 
 .hero__title {
   font-weight: 600;
 }
+
+.hero__img {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  background: #005A8D;
+  margin-left: auto;
+}
+
+.hero__section{
+  padding-top: 350px;
+}
+
+.hero__content p {
+  line-height: 30px;
+  font-weight: 300px;
+} 

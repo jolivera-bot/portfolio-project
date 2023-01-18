@@ -1,25 +1,43 @@
 
 
-import React from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import './hero.css';
 
 import { Container,Row,Col } from 'reactstrap';
 
+import Typewriter from 'typewriter-effect'
+
 
 const Hero = () => {
 
-  return <section>
+  const [state] = useState({
+    title: 'Welcome!',
+    titleTwo: "I'm",
+  })
+  return <section className='hero__section' id="home">
     <Container>
       <Row>
         <Col lg='6' md='6'>
           <div className="hero__content">
             <p>
-              Welcome!
+              {state.title}
             </p>
-            <h5>Hi</h5>
-            <h2 className='hero__title'>I'm <span>John Joseph Olivera</span></h2>
+            
+            <h2 className='hero__title mb-5'>{state.titleTwo}<span>
+              <Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+                delay: 40,
+                strings:[
+                  "John Joseph Olivera",
+                  "a Web Developer."
+                ]
+              }}
+              />
+              </span></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div className='hero__btns d-flex align-items-center gap-4'>
+            <div className='mt-5 hero__btns d-flex align-items-center gap-4'>
               <button className='btn hire__btn'><a href="#">Hire Me</a></button>
               <button className='btn'>Contact</button>
             </div>
